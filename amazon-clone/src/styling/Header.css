@@ -2,6 +2,9 @@
     display: flex;
     align-items: center;
     background-color: #131921;
+    position: sticky;
+    top:0;
+    z-index: 100;
 }
 
 .header__logo {
@@ -56,4 +59,10 @@
 
 .header__optionBasket {
     display: flex;
+    align-items: center;
+}
+
+.header__basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
 }
