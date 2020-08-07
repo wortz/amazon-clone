@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import Header from './components/Header';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         {/* React Router */}
         <Switch>
             <Route path="/checkout">
+              <Header />
               <h1>Checkout</h1>
             </Route>
             <Route path="/login">
@@ -21,7 +23,7 @@ function App() {
             </Route>
             <Route path="/">
               <Header />
-              <h1>This is an Amazon Clone built with React JS!!!!</h1>
+              <Home />
             </Route>
         </Switch>
       </div>
