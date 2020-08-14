@@ -18,6 +18,6 @@ This Project is based on a video, that the propose was to build an amazon clone 
 - [x] Learn about React Context API
 - [x] Setup Add to Basket Button
 - [x] Build Checkout page
-- [ ] Build Subtotal Component
+- [x] Build Subtotal Component
 - [ ] Build Login Page
 - [ ] Deploy the application
