@@ -33,7 +33,8 @@
 }
 
 .product > button {
-    background-color: tomato;
-    border: 2px solid;
-    border-color: #d4a11f #a88734 #e7a90ce8;
+    font-weight: 600;
+    border: 3px solid;
+    background: #f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
 }

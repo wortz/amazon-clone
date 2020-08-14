@@ -15,17 +15,17 @@ function App() {
       <div className="app">
         {/* React Router */}
         <Switch>
-            <Route path="/checkout">
-              <Header />
-              <Checkout />
-            </Route>
-            <Route path="/login">
-              <h1>Login</h1>
-            </Route>
-            <Route path="/">
-              <Header />
-              <Home />
-            </Route>
+          <Route path="/checkout">
+            <Header />
+            <Checkout />
+          </Route>
+          <Route path="/login">
+            <h1>Login</h1>
+          </Route>
+          <Route path="/">
+            <Header />
+            <Home />
+          </Route>
         </Switch>
       </div>
     </Router>

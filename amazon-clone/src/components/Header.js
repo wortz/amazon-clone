@@ -6,15 +6,15 @@ import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from '../state/StateProvider'
 
 function Header() {
-    const [{basket}] = useStateValue();
+    const [{ basket }] = useStateValue();
 
     return (
         <nav className="header">
             {/* logo image */}
             <Link to="/">
-                <img className="header__logo" 
-                alt="Amazon logo"
-                src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"/>
+                <img className="header__logo"
+                    alt="Amazon logo"
+                    src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" />
             </Link>
 
             {/* Search box */}
@@ -47,7 +47,7 @@ function Header() {
                         <span className="header__optionLineTwo">Prime</span>
                     </div>
                 </Link>
-                
+
                 {/* 4th link */}
                 <Link to="/checkout" className="header__link">
                     <div className="header__optionBasket">
