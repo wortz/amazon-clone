@@ -4,12 +4,12 @@ import { useStateValue } from '../state/StateProvider'
 
 function CheckoutProduct({ id, title, price, image, rating }) {
     //eslint-disable-next-line
-    const [{}, dispatch] = useStateValue();
+    const [{ }, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
         //remove item from basket
         dispatch({
-            type:'REMOVE_FROM_BASKET',
+            type: 'REMOVE_FROM_BASKET',
             id: id,
         })
     }
@@ -21,7 +21,7 @@ function CheckoutProduct({ id, title, price, image, rating }) {
                 src={image}
                 alt={title + " image"}
             />
-           <div className="checkoutProduct__info">
+            <div className="checkoutProduct__info">
                 <p className="checkoutProduct__title">{title}</p>
 
                 <p className="checkoutProduct__price">
@@ -37,7 +37,7 @@ function CheckoutProduct({ id, title, price, image, rating }) {
                 </div>
 
                 <button onClick={removeFromBasket}>Remove from basket</button>
-           </div>
+            </div>
 
         </div>
     )

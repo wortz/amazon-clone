@@ -8,6 +8,9 @@ export const initialState = {
     }],
 };
 
+export const getBasketTotal = (basket) =>
+    basket?.reduce((amount, item) => item.price + amount, 0);
+
 const reducer = (state, action) => {
     console.log(action);
     switch (action.type) {
@@ -24,12 +27,12 @@ const reducer = (state, action) => {
             const newBasket = [...state.basket]
 
             //find where the item is, returns -1 if is not in the basket
-            const index=state.basket.findIndex(
+            const index = state.basket.findIndex(
                 (basketItem) => basketItem.id === action.id
             );
-            
+
             //if the item is in the basket
-            if(index >=0){
+            if (index >= 0) {
                 newBasket.splice(index, 1);
             } else {    //if the item is not in the basket
                 console.warn(
