@@ -15,8 +15,8 @@ This Project is based on a video, that the propose was to build an amazon clone 
 - [x] Build navigation bar that sticks in the top
 - [x] Build the Banner
 - [x] Build the Product component
-- [ ] Learn about React Context API
-- [ ] Setup Add to Basket Button
+- [x] Learn about React Context API
+- [x] Setup Add to Basket Button
 - [ ] Build Checkout page
 - [ ] Build Subtotal Component
 - [ ] Build Login Page
