@@ -9,7 +9,7 @@ function Checkout() {
 
     return (
         <div className="checkout">
-            <div ClassName="checkout__left">
+            <div className="checkout__left">
                 <img
                     className="checkout__ad"
                     src="https://images-na.ssl-images-amazon.com/images/G/01/credit/img16/CCMP/newstorefront/YACC-desktop-nonprime-banner3.png"

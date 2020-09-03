@@ -6,6 +6,7 @@ export const initialState = {
         image: "https://i.imgur.com/6aJyXUn.jpg",
         rating: 4,
     }],
+    user: null,
 };
 
 export const getBasketTotal = (basket) =>
@@ -14,6 +15,11 @@ export const getBasketTotal = (basket) =>
 const reducer = (state, action) => {
     console.log(action);
     switch (action.type) {
+        case 'SET_USER':
+            return {
+                ...state,
+                user: action.user,
+            }
         case 'ADD_TO_BASKET':
             //add item to basket
             return {

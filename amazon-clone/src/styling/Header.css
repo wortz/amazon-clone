@@ -1,4 +1,6 @@
 .header {
+    min-width: 100%;
+    width: max-content;
     display: flex;
     align-items: center;
     background-color: #131921;

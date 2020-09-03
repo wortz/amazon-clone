@@ -19,5 +19,5 @@ This Project is based on a video, that the propose was to build an amazon clone 
 - [x] Setup Add to Basket Button
 - [x] Build Checkout page
 - [x] Build Subtotal Component
-- [ ] Build Login Page
+- [x] Build Login Page
 - [ ] Deploy the application

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: flex-end;
     max-height: 400px;
-    min-width: 100px;
+    min-width: 60px;
     background-color: white;
     padding: 20px;
     margin: 10px;
@@ -27,7 +27,7 @@
 
 .product__image {
     max-height: 200px;
-    width: 100%;
+    max-width: 100%;
     object-fit: contain;
     margin-bottom: 15px;
 }
