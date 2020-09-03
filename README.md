@@ -20,4 +20,4 @@ This Project is based on a video, that the propose was to build an amazon clone 
 - [x] Build Checkout page
 - [x] Build Subtotal Component
 - [x] Build Login Page
-- [ ] Deploy the application
+- [x] Deploy the application
