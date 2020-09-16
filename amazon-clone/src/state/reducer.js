@@ -1,11 +1,5 @@
 export const initialState = {
-    basket: [{
-        id: "123123",
-        title: "Asus TUF Gaming H7 Black/Red",
-        price: 99.99,
-        image: "https://i.imgur.com/6aJyXUn.jpg",
-        rating: 4,
-    }],
+    basket: [],
     user: null,
 };
 
@@ -31,18 +25,13 @@ const reducer = (state, action) => {
 
             //clone basket
             const newBasket = [...state.basket]
-
-            //find where the item is, returns -1 if is not in the basket
-            const index = state.basket.findIndex(
-                (basketItem) => basketItem.id === action.id
-            );
-
-            //if the item is in the basket
-            if (index >= 0) {
-                newBasket.splice(index, 1);
-            } else {    //if the item is not in the basket
+            
+            //checking for cases of something going wrong
+            if(state.basket[action.index].id===action.id){
+                newBasket.splice(action.index, 1);
+            }   else {    //if something goes wrong and the basket at index does not correspond to the id of the item
                 console.warn(
-                    "Cant remove product (id: " + action.id + " as its not in the basket."
+                    "Cant remove product (id: " + action.id + " as something failed."
                 );
             }
 

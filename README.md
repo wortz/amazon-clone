@@ -21,3 +21,4 @@ This Project is based on a video, that the propose was to build an amazon clone 
 - [x] Build Subtotal Component
 - [x] Build Login Page
 - [x] Deploy the application
+- [x] Add Simple Animations

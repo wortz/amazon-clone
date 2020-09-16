@@ -1,3 +1,11 @@
 * {
   margin: 0px;
 }
+
+button:active {
+  transform: translateY(4px);
+}
+
+button {
+  outline: 0;
+}

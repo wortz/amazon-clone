@@ -48,6 +48,11 @@
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.header__option:active {
+    transform: translateY(4px);
 }
 
 .header__optionLineOne {
