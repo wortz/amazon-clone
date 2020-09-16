@@ -15,6 +15,17 @@
     margin: 15px 10px 0px;
 }
 
+
+
+@media only screen and (max-width: 600px){
+    .header__logo{
+        width: 70px;
+        object-fit: contain;
+        align-self: center;
+    }
+}
+
+
 .header__search {
     display: flex;
     flex: 1;
@@ -51,8 +62,13 @@
     cursor: pointer;
 }
 
+.header__option:hover{
+    color: #a88734;
+    transform: translateY(-3px);
+}
+
 .header__option:active {
-    transform: translateY(4px);
+    transform: translateY(0px);
 }
 
 .header__optionLineOne {
@@ -66,6 +82,7 @@
 
 .header__optionBasket {
     display: flex;
+    flex-direction: row !important;
     align-items: center;
 }
 

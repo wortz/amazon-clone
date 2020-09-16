@@ -13,8 +13,8 @@
 }
 
 .product:hover {
-    border: 1px solid;
-    border-color: #a88734 #9c7e31 #846a29;
+    box-shadow: 5px 5px  #d3c091;
+    transform: translateY(-10px);
   }
 
 .product__info {
