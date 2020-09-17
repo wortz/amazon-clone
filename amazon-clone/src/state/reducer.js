@@ -14,6 +14,12 @@ const reducer = (state, action) => {
                 ...state,
                 user: action.user,
             }
+        case 'SET_BASKET':
+            //add item to basket
+            return {
+                ...state,
+                basket: action.basket
+            };
         case 'ADD_TO_BASKET':
             //add item to basket
             return {
